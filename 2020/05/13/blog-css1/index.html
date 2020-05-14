@@ -2,7 +2,6 @@
 
 
 
-  
 
 
 
@@ -10,9 +9,6 @@
 
 
 
-
-
-  
 
 
 
@@ -24,7 +20,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
   <meta name="renderer" content="webkit">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no", user-scalable=no">
-  <title>Archives: 2020ajia-blog</title>
+  <title>touch-actionajia-blog</title>
   <link rel="shortcut icon" href="">
   
     
@@ -108,54 +104,59 @@
                 </nav>
             </header>
                 
-<div class="blog-main-post">
-	<div class="index-post-br"></div>
-  
-
-
-
-<article class="blog-post-block">
+<header class="blog-post-page-title">
+    <h4>touch-action</h4>
+    <time datetime="2020-05-13T06:44:10.602Z"><i class="fa fa-clock-o"></i>2020-05-13</time>
     
-
-    <div class="blog-post-block-padding">
-        <a href="/2020/05/13/blog-css1/">touch-action</a>
+    
+    
+    
+	
+        <span><i class="fa fa-folder-o"></i>
+    		
+    	       <a href="/categories/css/" rel="categories" data-toggle="tooltip" data-placement="top" title="Linux">css</a>
+    		
+        </span>
+	
+    
+</header>
+<div class="blog-main-post blog-post-page-box">
+    <article class="blog-post-block blog-post-page-content">
         <section>
             
-                
-                前言：一般在手机端实现弹窗弹出时，禁止底层的方法有两种
-第一种：overflow:hidden当弹窗弹出时，给底层元素（body、html）增加 css(overflow:hidden);然后弹窗消失时，解除底层元素的 overflow:hidden
-弊端如果
-                ...
+                <p>前言：一般在手机端实现弹窗弹出时，禁止底层的方法有两种</p>
+<h2 id="第一种：overflow-hidden"><a href="#第一种：overflow-hidden" class="headerlink" title="第一种：overflow:hidden"></a>第一种：overflow:hidden</h2><p>当弹窗弹出时，给底层元素（body、html）增加 css(overflow:hidden);<br>然后弹窗消失时，解除底层元素的 overflow:hidden</p>
+<h3 id="弊端"><a href="#弊端" class="headerlink" title="弊端"></a>弊端</h3><p>如果手机端的页面属于超长页面，会导致整个界面回到顶部，用户体验非常不好</p>
+<h2 id="第二种：touchmove-事件监听"><a href="#第二种：touchmove-事件监听" class="headerlink" title="第二种：touchmove 事件监听"></a>第二种：touchmove 事件监听</h2><p>当弹窗弹出时，给弹窗的最外层元素添加阻止默认事件</p>
+<pre><code class="bash">$(&#39;.scroll-box&#39;).on(&#39;touchmove&#39;,function(e){
+    e.preventDefault()
+})</code></pre>
+<h3 id="弊端-1"><a href="#弊端-1" class="headerlink" title="弊端"></a>弊端</h3><p>如果弹窗内部本身就有滚动条，会导致内部无法滚动；<br>就要添加额外的监听事件来实现弹窗内部的滚动</p>
+<h3 id="最终完美解决以上两种办法出现的问题的办法是："><a href="#最终完美解决以上两种办法出现的问题的办法是：" class="headerlink" title="最终完美解决以上两种办法出现的问题的办法是："></a>最终完美解决以上两种办法出现的问题的办法是：</h3><h4 id="给弹窗最外层的元素添加-css（touch-action-none）"><a href="#给弹窗最外层的元素添加-css（touch-action-none）" class="headerlink" title="给弹窗最外层的元素添加 css（touch-action:none）"></a>给弹窗最外层的元素添加 css（touch-action:none）</h4>
             
         </section>
-        <footer>
+        <footer class="blog-post-page-tags">
         
-            <time datetime="2020-05-13T06:44:10.602Z"><i class="fa fa-clock-o"></i>2020-05-13</time>
-        
-        
-        
-        
-        
-          <span><i class="fa fa-folder-o"></i>
-            
-              <a href="/categories/css/" itemprop="url" rel="index">
-                css
-              </a>
-            
-          </span>
-        
+			
+				
+			<a href="/tags/css/" rel="tag" data-toggle="tooltip" data-placement="top" title="Linux">css</a>
+				
+			
+		
         </footer>
-    </div>
-</article>
+    </article>
+    <article class="blog-post-page-readmore">
+    	
+    	
+		
 
+		
+		
 
-
-  
-    <nav id="pagination" class="blog-pagination">
-            <span class="page-number current">1</span>
-    </nav>
-
- </div>
+        <div style="clear: both;"></div>
+    </article>
+    
+</div>
 
                 
             <footer class="blog-footer">
