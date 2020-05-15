@@ -112,6 +112,42 @@
     
 
     <div class="blog-post-block-padding">
+        <a href="/2020/05/15/blog-react1/">React首页白屏优化</a>
+        <section>
+            
+                
+                前言：react项目渲染时，首页加载时如果页面资源或者当前网速不给力，就会有一段时间的白屏，用户体验极差
+解决方案# 1.在webpack.config.js内添加如下代码：
+var loading = {
+    html: fs.readFileSync(
+                ...
+            
+        </section>
+        <footer>
+        
+            <time datetime="2020-05-15T02:20:35.478Z"><i class="fa fa-clock-o"></i>2020-05-15</time>
+        
+        
+        
+        
+        
+          <span><i class="fa fa-folder-o"></i>
+            
+              <a href="/categories/React/" itemprop="url" rel="index">
+                React
+              </a>
+            
+          </span>
+        
+        </footer>
+    </div>
+</article>
+
+
+<article class="blog-post-block">
+    
+
+    <div class="blog-post-block-padding">
         <a href="/2020/05/14/blog-wx1/">微信浏览器上实现audio音频播放</a>
         <section>
             
@@ -203,11 +239,11 @@
             </div>
             <div class="blog-sidebar-count blog-sidebar-padding">
                 <div class="blog-sidebar-count-left">
-                    <p class="blog-sidebar-count-p">2</p>
+                    <p class="blog-sidebar-count-p">3</p>
                     <span class="blog-sidebar-count-span">文章</span>
                 </div>
                 <div class="blog-sidebar-count-right">
-                    <p class="blog-sidebar-count-p">2</p>
+                    <p class="blog-sidebar-count-p">3</p>
                     <span class="blog-sidebar-count-span">标签</span>
                 </div>
                 <div style="clear: both;"></div>
@@ -219,6 +255,11 @@
                     
                       <li class="list-group-item justify-content-between">
                           <a href="/categories/css/">css</a>
+                          <span class="badge badge-default badge-pill">1</span>
+                      </li>
+                    
+                      <li class="list-group-item justify-content-between">
+                          <a href="/categories/React/">React</a>
                           <span class="badge badge-default badge-pill">1</span>
                       </li>
                     
@@ -236,6 +277,8 @@
                   
                     
                       <li><a href="/tags/css/" class="tag-could" data-toggle="tooltip" data-placement="top" title="css">css</a></li>
+                    
+                      <li><a href="/tags/React/" class="tag-could" data-toggle="tooltip" data-placement="top" title="React">React</a></li>
                     
                       <li><a href="/tags/%E5%BE%AE%E4%BF%A1%E6%B5%8F%E8%A7%88%E5%99%A8/" class="tag-could" data-toggle="tooltip" data-placement="top" title="微信浏览器">微信浏览器</a></li>
                     
